@@ -24,7 +24,7 @@ public class GuiUtils{
 	public static void addItem(Material block, List<String> lore, int quantity, Inventory inv, int place) {
 		ItemStack item = new ItemStack(block, quantity);
 		ItemMeta itemMeta = item.getItemMeta();
-		itemMeta.setDisplayName("ง0");
+		itemMeta.setDisplayName("ยง0");
 		itemMeta.setLore(lore);
 		item.setItemMeta(itemMeta);
 		inv.setItem(place, item);
@@ -42,7 +42,7 @@ public class GuiUtils{
 	public static void addItem(Material block, List<String> lore, Inventory inv, int place) {
 		ItemStack item = new ItemStack(block, 1);
 		ItemMeta itemMeta = item.getItemMeta();
-		itemMeta.setDisplayName("ง0");
+		itemMeta.setDisplayName("ยง0");
 		itemMeta.setLore(lore);
 		item.setItemMeta(itemMeta);
 		inv.setItem(place, item);
@@ -59,7 +59,7 @@ public class GuiUtils{
 	public static void addItem(Material block, int quantity, Inventory inv, int place) {
 		ItemStack item = new ItemStack(block, quantity);
 		ItemMeta itemMeta = item.getItemMeta();
-		itemMeta.setDisplayName("ง0");
+		itemMeta.setDisplayName("ยง0");
 		item.setItemMeta(itemMeta);
 		inv.setItem(place, item);
 	}
@@ -75,7 +75,7 @@ public class GuiUtils{
 	public static void addItem(Material block, Inventory inv, int place) {
 		ItemStack item = new ItemStack(block, 1);
 		ItemMeta itemMeta = item.getItemMeta();
-		itemMeta.setDisplayName("ง0");
+		itemMeta.setDisplayName("ยง0");
 		item.setItemMeta(itemMeta);
 		inv.setItem(place, item);
 	}
@@ -83,7 +83,7 @@ public class GuiUtils{
 	public static void fillBackground(Material block, List<String> lore, Inventory inv) {
 		ItemStack item = new ItemStack(block, 1);
 		ItemMeta itemMeta = item.getItemMeta();
-		itemMeta.setDisplayName("ง0");
+		itemMeta.setDisplayName("ยง0");
 		itemMeta.setLore(lore);
 		item.setItemMeta(itemMeta);
 		for(int slot = 0; slot < inv.getSize(); slot++) {
@@ -144,12 +144,15 @@ public class GuiUtils{
 	public static List<String> createLore(String line1, String line2, String line3) {
 		List<String> list = new ArrayList<String>();
 		list.add(line1);
+		list.add(line2);
+		list.add(line3);
 		return list;
 	}
 	
 	public static List<String> createLore(String line1, String line2) {
 		List<String> list = new ArrayList<String>();
 		list.add(line1);
+		list.add(line2);
 		return list;
 	}
 	
